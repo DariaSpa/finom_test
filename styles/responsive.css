@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1119px) {
+    .header__menu-toggler {
+        display: block;
+    }
+
+    .header__menu-toggler::before {
+        content: '+';
+        transition: .15s ease-in-out;
+    }
+
+    .header__menu-toggler.active::before {
+        content: '-';
+    }
+
+    .header__menu-bank {
+        position: absolute;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        gap: 16px;
+        padding: 16px;
+        margin-top: 40px;
+        border-radius: 16px;
+        box-shadow: 0px 8px 12px 0px rgba(52, 53, 70, 0.02);
+        align-items: flex-start;
+    }
+
+    .header__menu-toggler.active+.header__menu-bank {
+        display: flex;
+    }
+
+    .header__menu-bank {
+        display: none;
+    }
+
+    .bank-menu__link {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .invocing__premium-wrapper {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .premium__payment {
+        align-items: flex-start;
+        padding: 0 0 24px 40px;
+        text-align: left;
+    }
+
+    .premium__close-btn {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .tab-content__limits-content {
+        flex-direction: column;
+    }
+
+    .limits__item {
+        flex: 1;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 30px 40px;
+    }
+
+    .sidebar-inner {
+        display: flex;
+    }
+
+    .setting-tabs {
+        flex: 0 1 50%;
+    }
+
+    .setting-tabs h3.setting-tabs__header-company {
+        padding: 0 0 7px 32px;
+    }
+
+    .invocing__biiling-details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .actions__btn-wrapper {
+        display: none;
+    }
+}

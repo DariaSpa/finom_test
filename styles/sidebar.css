@@ -1,0 +1,46 @@
+.sidebar {
+    flex: 0 0 304px;
+}
+
+.sidebar-inner {
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px 0;
+    box-shadow: 0px 8px 12px 0px rgba(52, 53, 70, 0.02);
+}
+
+.setting-tabs h3 {
+    color: #7B829A;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 32px 7px 32px;
+    letter-spacing: 1px;
+}
+
+.setting-tabs h3.setting-tabs__header-company {
+    padding: 28px 32px 20px 32px;
+}
+
+.setting-tabs ul {
+    padding: 0;
+    margin: 0;
+}
+
+.setting-tabs ul li a {
+    color: #222B55;
+    cursor: pointer;
+    line-height: 40px;
+    display: block;
+    padding-left: 28px;
+    border-left: 4px solid transparent;
+}
+
+.setting-tabs ul li a:hover {
+    border-left: 4px solid #FF5762;
+    color: #7B829A;
+}
+
+.setting-tabs ul li.active a {
+    border-left: 4px solid #FF5762;
+    font-weight: 700;
+}

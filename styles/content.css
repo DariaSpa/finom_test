@@ -1,0 +1,248 @@
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.content-wrapper {
+    display: flex;
+    max-width: 1120px;
+    width: 100%;
+    gap: 32px;
+    padding-top: 12px;
+}
+
+.content_closed {
+    display: none;
+}
+
+.content {
+    flex: 1 1 auto;
+    padding-bottom: 32px;
+}
+
+.empty-element {
+    display: none;
+}
+
+.empty-element_open {
+    display: block;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 60px;
+    box-shadow: 0px 8px 12px 0px rgba(52, 53, 70, 0.02);
+}
+
+.invocing-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(34, 43, 85, 0.08);
+}
+
+.invocing-inner__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invocing-inner__header h1 {
+    font-size: 36px;
+    line-height: 43.2px;
+}
+
+.invocing-inner .invocing-inner__header a {
+    color: #415DE8;
+    transition: .15s ease-in-out;
+}
+
+.invocing-inner .invocing-inner__header a:hover {
+    color: #7889df;
+}
+
+.invocing__price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-top: -8px;
+    margin-bottom: 1px;
+}
+
+.invocing__price span {
+    color: #7B829A;
+    font-size: 20px;
+}
+
+.invocing__biiling-details {
+    font-size: 14px;
+    color: #7B829A;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.invocing__biiling-details p {
+    display: inline-block;
+}
+
+.invocing__biiling-details a {
+    color: #415DE8;
+    transition: .15s ease-in-out;
+}
+
+.invocing__biiling-details a:hover {
+    color: #7889df;
+}
+
+.btn {
+    padding: 0 16px;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.invocing__uppgrade p {
+    display: inline-block;
+    padding-left: 16px;
+    font-size: 14px;
+}
+
+.invocing__uppgrade-btn {
+    background-color: #415DE8;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    transition: .15s ease-in-out;
+}
+
+.invocing__uppgrade-btn:hover {
+    background-color: #7889df;
+}
+
+.invocing__new-feature {
+    font-size: 20px;
+}
+
+.invocing__new-feature h2 {
+    font-size: 20px;
+    padding: 40px 0 16px 0;
+}
+
+.invocing__new-feature h2::after {
+    content: "";
+    margin-left: 8px;
+    margin-bottom: -4px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/star.png") no-repeat center;
+    display: inline-block
+}
+
+.invocing__premium-wrapper {
+    background-color: #F5F8FF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.premium__about {
+    padding: 24px 40px;
+}
+
+.premium__about h3 {
+    color: #415DE8;
+    font-size: 24px;
+    padding-bottom: 16px;
+    padding-top: 9px;
+}
+
+.premium__about-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.premium__about-description p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.premium__about-description p::before {
+    content: "";
+    margin-bottom: -7px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/check.png") no-repeat center;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.premium__payment {
+    padding: 32px 40px 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.premium__payment {
+    font-size: 12px;
+    color: #7B829A;
+    text-align: right;
+}
+
+.premium__payment-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding-top: 7px;
+}
+
+.premium__payment-billed {
+    max-width: 150px;
+    padding: 14px 0 28px;
+}
+
+.premium__close-btn {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    line-height: 8px;
+    background: url("../images/close-btn.svg") left center no-repeat;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.premium__upgrade-btn {
+    background-color: #FF5762;
+    color: white;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    transition: .15s ease-in-out;
+    padding: 0 17px;
+}
+
+.premium__upgrade-btn:hover {
+    background-color: #fc7881;
+}
+
+.chat-btn {
+    position: fixed;
+    right: 75px;
+    bottom: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: url("../images/chat.svg") no-repeat center 55% #FF5762;
+    transition: .15s ease-in-out;
+}
+
+.chat-btn:hover {
+    background-color: #fc7881;
+}

@@ -1,0 +1,187 @@
+.header__inner {
+    padding: 0 93px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-wrapper {
+    flex: 0 0 calc((100% - 1120px) / 2);
+    padding-right: 32px;
+}
+
+.header__menu-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    padding-right: 32px;
+}
+
+.header__menu-toggler {
+    display: none;
+    background-color: rgba(65, 93, 232, 0.12);
+    color: #415DE8;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    transition: .15s ease-in-out;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 8px;
+    margin-right: 32px;
+}
+
+.header__menu-toggler:hover {
+    background-color: #7889df;
+}
+
+.header__menu-toggler.active {
+    background-color: #e0e3f4;
+    color: #415DE8;
+}
+
+.header__menu-bank {
+    flex: 1;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.bank-menu__link {
+    display: inline-block;
+    font-size: 18px;
+    color: #222B55;
+    transition: .15s ease-in-out;
+}
+
+.bank-menu__link:hover {
+    color: #7B829A;
+}
+
+.bank-menu__link.icon {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 32px;
+    background: url("../images/box.png") left center no-repeat;
+}
+
+.header__actions-wrapper {
+    flex: 0 0 calc((100% - 1120px) / 2);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions__btn-wrapper {
+    background-color: rgba(65, 93, 232, 0.12);
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.actions__btn-wrapper:hover {
+    background-color: rgba(65, 93, 232, 0.32);
+}
+
+.actions__btn-wrapper a {
+    font-size: 14px;
+    color: #415DE8;
+}
+
+.upgrade-btn {
+    display: inline-block;
+    padding-left: 24px;
+    background: url("../images/rocket.png") left center no-repeat;
+    background-size: auto 100%;
+}
+
+.company-dropdown {
+    display: flex;
+    position: relative;
+}
+
+.company-dropdown_open .company-dropdown__chevron {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+}
+
+.company-dropdown__selected-comp {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.company-dropdown__selected-comp:hover {
+    filter: grayscale(30%);
+    color: #7B829A;
+}
+
+.togler {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+}
+
+.company-dropdown__init {
+    background-color: #FFC2C2;
+    color: #FF5762;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+}
+
+.company-dropdown__name {
+    text-transform: uppercase;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.company-dropdown__chevron {
+    background: url("../images/chevron.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.company-dropdown__content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px 0;
+    box-shadow: 0px 8px 12px 0px rgba(52, 53, 70, 0.02);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.company-dropdown_open .company-dropdown__content {
+    display: block;
+}
+
+.company-dropdown__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company-dropdown__item {
+    padding: 0 16px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.company-dropdown__item:hover {
+    border-left: 2px solid #FF5762;
+    color: #7B829A;
+}
+
+.company-dropdown_open .company-dropdown__arrow svg {
+    transform: rotate(180deg);
+}
